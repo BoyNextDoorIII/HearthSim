@@ -152,7 +152,7 @@ class Card:
         elif self.check_name('Spirit_Lash'):
             for m in self.get_owner().get_field():
                 m.take(1+self.get_owner().get_spell_damage())
-                self.get_owner().heal(1+self.get_onwer().get_spell_damage())
+                self.get_owner().heal(1+self.get_owner().get_spell_damage())
         elif self.check_name('Topsy_Turvy'):
             health = target.get_health()
             target.set_max_health(target.get_attack())
